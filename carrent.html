@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-image: url("https://wallpaperaccess.com/full/2006701.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+        }
+
+        .container {
+            /* rgb(228, 215, 38) */
+            height: auto;
+            width: 70%;
+            box-shadow: 0 0 30px 5px white;
+            /* border: 1px solid rgb(49, 210, 191); */
+            border: none;
+            background: transparent;
+            padding: 20px;
+            backdrop-filter: blur(2px);
+            display: block;
+            border-radius: 40px 0;
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            cursor: pointer;
+            font-family: cursive;
+            color: black;
+            font-size: 15px;
+        }
+        .h{
+            display: flex;
+            /* border: 2px solid white; */
+            justify-content: center;
+            margin: 40px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #n{
+            /* border: 2px solid red; */
+            width: 100%;
+            padding: 0px;
+        }
+        input {
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 90%;
+        }
+        input:hover{
+            background-color: #96b6c5;
+        }
+        .omm{
+            /* border: 2px solid red; */
+            margin-left: 47px;
+            display: flex;
+        }
+        label {
+            cursor: pointer;
+            font-size: 20px;
+            color: #a367b1;
+            text-shadow: 2px 2px 2px #ffd1e3;
+        }
+        label:hover{
+            color: #fff2f2;
+        }
+        .button{
+           background-color: yellowgreen;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            width: 20%;
+            font-size: 20px;
+            
+        }
+        .button:hover{
+            color: antiquewhite;
+            background-color: lightcoral;
+        }
+        .form-select:hover{
+            background-color: #2d9596;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <form>
+                <div class="h">
+                    <div class="form-group" id="n">
+                        <div class="omm">
+                            <label for="Name">NAME</label><br>
+                        </div>
+                        <input type="text" id="Name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group" id="n">
+                        <div class="omm">
+                            <label for="Email">EMAIL</label><br>
+                        </div>    
+                        <input type="email" id="Email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="omm">
+                        <label for="Number">PHONE NUMBER</label><br>
+                    </div>    
+                    <input type="tel" id="Email" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <div class="omm">
+                        <label for="location">PICKUP LOCATION</label>
+                    </div>
+                    <input type="text" id="location" placeholder="Enter ZIP/Location">
+                </div>
+                <div class="form-group">
+                    <div class="omm">
+                        <label for="destination">DESTINATION</label>
+                    </div>    
+                    <input type="text" id="destination" placeholder="Enter ZIP/Location">
+                </div>
+                <div class="form-group">
+                    <div class="omm">
+                        <label for="date">PICKUP DATE</label>
+                    </div>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <div class="omm">
+                        <label for="Ddate">DROP DATE</label>
+                    </div>    
+                    <input type="date" id="Ddate">
+                </div>
+                <select class="form-select">
+                    <option selected>HOUR</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select><br>
+                  <br>
+                  <!-- <a href="carreservation.html"><button class="book">BOOK NOW</button></a> -->
+                  <div class="button"><a href="carreservation.html">BOOK NOW</a></div>
+              </form>
+        </center>
+    </div>
+</body>
+
+</html>

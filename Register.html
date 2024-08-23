@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style>
+        body,
+        html {
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+            background-image: url("registercar.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background: transparent;
+        }
+        .container {
+            /* rgb(228, 215, 38) */
+            height: 70%;
+            width: 100%;
+            box-shadow:inset 0 0 30px 5px lightyellow;
+            border: 1px solid white;
+            /* background: transparent; */
+            padding: 20px;
+            backdrop-filter: blur(0px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px 0;
+            cursor: pointer;
+        }
+        label{
+            color: #f1f0e8;
+            text-shadow: 3px 3px 3px violet;
+            font-size: 30px;
+        }
+        h1{
+            color: #ffd1e3;
+        }
+        p{
+            color: rgb(235, 139, 13);
+            font-size: large;
+            font-family: cursive;
+            
+        }
+        input:hover{
+            background-color: #eee0c9;
+        }
+        .register{
+            color: #070808;
+            background-color: #a367b1;
+            width: 50%;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 20px;
+        }
+        .register:hover{
+            background-color: limegreen;
+        }
+        .container:hover{
+            box-shadow:inset 0 0 30px 5px #a367b1;
+        }
+        a{
+            font-size: 20px;
+            color: yellow;
+            border: 1px solid whitesmoke;
+        }
+        a:hover{
+            color: chartreuse;
+            padding: 0px;
+            margin: 0px;
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1>REGISTER</h1>
+            <hr style="border: 2px solid green; border-radius: 5px;">
+            <form>
+                <div class="form-group">
+                    <label for="Name">NAME</label>
+                    <input type="text" id="Name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">EMAIL</label>
+                    <input type="email" id="Email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Number">PHONE NUMBER</label>  
+                    <input type="tel" id="Email" placeholder="Phone No" required>
+                </div>
+                <div class="form-group">
+                    <label for="pword">PASSWORD</label>
+                    <input type="password" id="pword" placeholder="Password" required>
+                </div>
+                <button class="register">REGISTER</button><br><br>
+                <p>Have an Account ?<a href="login.html">Login Here</a></p>
+              </form>
+        </center>
+    </div>
+</body>
+</html>
